@@ -9,11 +9,16 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f8;
     display: grid;
-    grid-template-columns: 1fr;
+    grid: 
+        'sidebar sidebar'
+        'graph graph'
+        'graph graph';
     height: 100vh;
 }
 
 .navbar{
+    grid-area: sidebar;
+
     background-color: lightcoral;
     width: 100%;
 
@@ -43,6 +48,19 @@ body {
     height: 100%;
     padding: 10px;
 
+}
+
+.cell {
+    border: 1px solid black;
+    display: grid;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+canvas{
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .label{

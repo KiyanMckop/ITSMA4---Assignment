@@ -36,9 +36,9 @@ function addNutritionData(data){
     const nutrients = data.totalNutrients;
 
     const calories = data.calories ? Math.round(data.calories) : 'N/A';
-    const fat = nutrients.FAT ? `${Math.round(nutrients.FAT.quantity)} ${nutrients.FAT.unit}` : 'N/A';
-    const carbs = nutrients.CHOCDF ? `${Math.round(nutrients.CHOCDF.quantity)} ${nutrients.CHOCDF.unit}` : 'N/A';
-    const protein = nutrients.PROCNT ? `${Math.round(nutrients.PROCNT.quantity)} ${nutrients.PROCNT.unit}` : 'N/A';
+    const fat = nutrients.FAT ? `${Math.round(nutrients.FAT.quantity)}` : 'N/A';
+    const carbs = nutrients.CHOCDF ? `${Math.round(nutrients.CHOCDF.quantity)}` : 'N/A';
+    const protein = nutrients.PROCNT ? `${Math.round(nutrients.PROCNT.quantity)}` : 'N/A';
 
 
     const info = {
@@ -50,6 +50,8 @@ function addNutritionData(data){
     };
 
     addNutritionInfo(info);
+    alert("Successfully added");
+
 }
 
 function displayNutritionInfo(data) {
