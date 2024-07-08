@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Info</title>
+    <link rel="stylesheet" href="home.css">
+    <script type="module" src="home.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="viewData.html">View Data</a>
+    </div>
+    <div class="container">
+        <h1>Nutrition Information</h1>
+        <form id="food-form">
+            <div class="form-group">
+                <label for="quantity-select">Amount:</label>
+                <input type="number" name="" id="quantity-number">
+                <label for="quantity-select">Quantity:</label>
+                <select id="quantity-select">
+                    <option value="cup">cup</option>
+                    <option value="grams">grams</option>
+                    <option value="kg">kgs</option>
+                    <option value="serving">serving</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="food-select">Food Item:</label>
+                <input type="text" id="food-select">
+            </div>
+            <button type="submit">Get Nutrition Info</button>
+        </form>
+        <div id="nutrition-info"></div>
+        <button type="submit" id="addNutritionInfo">Add Info</button>
+    </div>
+</body>
+</html>
